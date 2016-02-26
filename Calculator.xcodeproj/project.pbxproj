@@ -14,6 +14,7 @@
 		C81BBA391C7DB4D600FA3E79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C81BBA371C7DB4D600FA3E79 /* LaunchScreen.storyboard */; };
 		C81BBA441C7DB4D600FA3E79 /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81BBA431C7DB4D600FA3E79 /* CalculatorTests.swift */; };
 		C81BBA4F1C7DB4D600FA3E79 /* CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81BBA4E1C7DB4D600FA3E79 /* CalculatorUITests.swift */; };
+		C8D5C5141C7F2B53007EE849 /* PopControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8D5C5131C7F2B53007EE849 /* PopControl.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		C81BBA4A1C7DB4D600FA3E79 /* CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C81BBA4E1C7DB4D600FA3E79 /* CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorUITests.swift; sourceTree = "<group>"; };
 		C81BBA501C7DB4D600FA3E79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8D5C5131C7F2B53007EE849 /* PopControl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PopControl.framework; path = "../PopControl/build/Debug-iphoneos/PopControl.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8D5C5141C7F2B53007EE849 /* PopControl.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +80,7 @@
 		C81BBA221C7DB4D600FA3E79 = {
 			isa = PBXGroup;
 			children = (
+				C8D5C5131C7F2B53007EE849 /* PopControl.framework */,
 				C81BBA2D1C7DB4D600FA3E79 /* Calculator */,
 				C81BBA421C7DB4D600FA3E79 /* CalculatorTests */,
 				C81BBA4D1C7DB4D600FA3E79 /* CalculatorUITests */,
@@ -485,6 +489,7 @@
 				C81BBA551C7DB4D600FA3E79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C81BBA561C7DB4D600FA3E79 /* Build configuration list for PBXNativeTarget "CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +498,7 @@
 				C81BBA581C7DB4D600FA3E79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C81BBA591C7DB4D600FA3E79 /* Build configuration list for PBXNativeTarget "CalculatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +507,7 @@
 				C81BBA5B1C7DB4D600FA3E79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
