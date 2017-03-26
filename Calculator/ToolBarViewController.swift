@@ -32,31 +32,31 @@ class ToolBarViewController: UIViewController {
     }
     
     internal init(){
-        let resourcesBundle = NSBundle(forClass: ToolBarViewController.self)
+        let resourcesBundle = Bundle(for: ToolBarViewController.self)
         super.init(nibName: "ToolBarViewController", bundle: resourcesBundle)
         
     }
     
-    internal func showInView(superview : UIView) {
+    internal func showInView(_ superview : UIView) {
         
         if self.view.superview == nil {
             superview.addSubview(self.view)
         }
         
-        self.view.center = CGPointMake(self.view.center.x, 900)
-        self.view.frame = CGRectMake(self.view.frame.origin.x , self.view.frame.origin.y , superview.frame.size.width, self.view.frame.size.height)
+        self.view.center = CGPoint(x: self.view.center.x, y: 900)
+        self.view.frame = CGRect(x: self.view.frame.origin.x , y: self.view.frame.origin.y , width: superview.frame.size.width, height: self.view.frame.size.height)
         
-        UIView.animateWithDuration(0.2, delay: 0.0, options: UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
+        UIView.animate(withDuration: 0.2, delay: 0.0, options: UIViewAnimationOptions(), animations: { () -> Void in
             
-            self.view.center =  CGPointMake(superview.center.x,superview.frame.size.height-236)
+            self.view.center =  CGPoint(x: superview.center.x,y: superview.frame.size.height-236)
 //            superview.frame.size.height*0.65
             }, completion: nil)
     }
     
     
     internal func hideInView() {
-        UIView.animateWithDuration(0.2, delay: 0.0, options: UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
-            self.view.center =  CGPointMake(self.view.center.x, 900)
+        UIView.animate(withDuration: 0.2, delay: 0.0, options: UIViewAnimationOptions(), animations: { () -> Void in
+            self.view.center =  CGPoint(x: self.view.center.x, y: 900)
             }, completion: nil)
     }
 
@@ -66,21 +66,21 @@ class ToolBarViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func BianHao(sender: AnyObject) {
+    @IBAction func BianHao(_ sender: AnyObject) {
         self.delegate?.FuShu()
     }
 
-    @IBAction func Finish(sender: AnyObject) {
+    @IBAction func Finish(_ sender: AnyObject) {
         self.delegate?.doFinish()
         hideInView()
     }
-    @IBAction func Back(sender: AnyObject) {
+    @IBAction func Back(_ sender: AnyObject) {
         self.delegate?.backEidt()
     }
-    @IBAction func Next(sender: AnyObject) {
+    @IBAction func Next(_ sender: AnyObject) {
         self.delegate?.nextEidt()
     }
-    @IBAction func Divide(sender: AnyObject) {
+    @IBAction func Divide(_ sender: AnyObject) {
         self.delegate?.divide()
     }
 

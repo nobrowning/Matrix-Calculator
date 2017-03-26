@@ -9,84 +9,98 @@
 import UIKit
 
 class NIJZClass: NSObject {
-    private let N:Int!
-    private var a = Array<Array<FractionalClass>>()
-    private var b = Array<Array<FractionalClass>>()
-    private var c = Array<Array<FractionalClass>>()
+    fileprivate let N:Int!
+    fileprivate var a = Array<Array<FractionalClass>>()
+    fileprivate var b = Array<Array<FractionalClass>>()
+    fileprivate var c = Array<Array<FractionalClass>>()
     init(a:Array<UITextField>,n:Int) {
         self.N = n
-        for(var i = 0;i<self.N;i += 1){
+        for i in 0 ..< self.N {
             var temp = Array<FractionalClass>()
-            for(var j = 0;j<self.N;j += 1){
+            for j in 0 ..< self.N {
                 temp.append(FractionalClass.StringToFractional(a[i*self.N+j].text!))
             }
             self.a.append(temp)
         }
     }
     func run(){
-        var i:Int
-        var j:Int
-        var m:Int
+//        var i:Int
+//        var j:Int
+//        var m:Int
         var t:FractionalClass
-        for(i = 0;i<self.N;i += 1){
+        
+        for _ in 0 ..< self.N{
+            //(i = 0;i<self.N;i += 1)
             var temp = Array<FractionalClass>()
-            for(var j = 0;j<self.N*2;j += 1){
+            for _ in 0 ..< self.N*2 {
                 temp.append(FractionalClass(Zi: 0, Mu: 1))
             }
             b.append(temp)
         }
-        for (i = 0; i < N; i += 1){
-            for (j = 0; j < N; j += 1){
+        
+        
+        for i in 0 ..< N {
+            for j in 0 ..< N{
                 b[i][j] = a[i][j]
             }
         }
         
-        
-        for (i = 0; i < self.N; i += 1){
+        for i in 0 ..< self.N{
             b[i][N + i] = FractionalClass(Zi: 1, Mu: 1)
         }
-        for (m = 0; m < N; m += 1){
+        
+        for m in 0 ..< N{
             t = b[m][m]
-            i = m
-            while (b[m][m] == 0) {
+            var i = m
+            while (b[m][m] == FractionalClass(Zi: 0,Mu: 1)) {
                 b[m][m] = b[i + 1][m]
                 i += 1
             }
             if (i > m) {
                 b[i][m] = t
-                for (j = 0; j < m; j += 1) {
+                for j in 0 ..< m {
                     t = b[m][j]
                     b[m][j] = b[i][j]
                     b[i][j] = t
                 }
-                for (j = m + 1; j < 2 * N; j += 1) {
+                for j in m + 1 ..< 2 * N {
                     t = b[m][j]
                     b[m][j] = b[i][j]
                     b[i][j] = t
                 }
             }
-            for (i = m + 1; i < N; i += 1){
-                for (j = 2 * N - 1; j >= m; j -= 1){
+            for i in m + 1 ..< N{
+                var j = 2 * N - 1
+                while j >= m{
+                    //for( j = 2 * N - 1; j >= m; j -= 1)
                     b[i][j] = b[i][j]-b[i][m] * b[m][j] / b[m][m]
+                    j -= 1
                 }
             }
-            for (j = 2 * N - 1; j >= m; j -= 1){
+            
+            var j = 2*N-1
+            while j>=m{
+                //for (j = 2 * N - 1; j >= m; j -= 1)
                 b[m][j] = b[m][j]/b[m][m]
+                j -= 1
             }
             
         }
-        m = N - 1
+        var m = N - 1
         while (m > 0) {
-            for (i = 0; i < m; i += 1){
-                for (j = 2 * N - 1; j >= m; j -= 1){
+            for i in 0 ..< m{
+                var j = 2 * N - 1
+                while j>=m{
+                    //for (j = 2 * N - 1; j >= m; j -= 1)
                     b[i][j] = b[i][j]-b[i][m] * b[m][j]
+                    j-=1
                 }
             }
             m -= 1
         }
-        for(i = 0;i<self.N;i += 1){
+        for i in 0 ..< self.N{
             var temp = Array<FractionalClass>()
-            for(var j = 0;j<self.N;j += 1){
+            for j in 0 ..< self.N {
                 temp.append(b[i][N + j])
             }
             c.append(temp)

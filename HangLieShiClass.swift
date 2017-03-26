@@ -9,20 +9,19 @@
 import UIKit
 
 class HangLieShiClass: NSObject {
-    private var Matrix = Array<UITextField>()
-    private let Hang:Int!
+    fileprivate var Matrix = Array<UITextField>()
+    fileprivate let Hang:Int!
     init(newMatrix: Array<UITextField>,Hang:Int) {
         self.Hang = Hang
         self.Matrix = newMatrix
     }
-    func hanglieshi(a:[UITextField],n:Int)->FractionalClass{
-        var j = 0
+    func hanglieshi(_ a:[UITextField],n:Int)->FractionalClass{
         var s = FractionalClass(Zi: 0, Mu: 1)
         if (n == 1){
             s = FractionalClass.StringToFractional(a[0].text!)
         }
         else{
-            for j=0;j<n;j += 1 {
+            for j in 0 ..< n {
                 if ((j%2) == 0){
                     s = s + FractionalClass.StringToFractional(a[j].text!)*yuzishi(j,b: a,y: n)
                 }
@@ -33,12 +32,10 @@ class HangLieShiClass: NSObject {
         }
         return s.YueFen()
     }
-    func yuzishi(x:Int,b:[UITextField],y:Int)->FractionalClass{
-        var m = 0
-        var l = 0
+    func yuzishi(_ x:Int,b:[UITextField],y:Int)->FractionalClass{
         var q = FractionalClass(Zi: 0, Mu: 1)
         var c = [UITextField]()
-        for (m = y;m<y*y;m++,l += 1){
+        for m in y ..< y*y {
             if(m%y == x){
                 continue
             }

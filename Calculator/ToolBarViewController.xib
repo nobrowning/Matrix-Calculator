@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ToolBarViewController" customModule="矩阵处理" customModuleProvider="target">
@@ -15,7 +17,8 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S38-XT-i57">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <frame key="frameInset" width="375" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <items>
                         <barButtonItem title="上一项" id="xfk-Wa-ZBe">
                             <connections>
@@ -27,19 +30,19 @@
                                 <action selector="Next:" destination="-1" id="KTB-Vz-Om2"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem width="35" style="plain" systemItem="fixedSpace" id="Hq6-ft-T7R"/>
+                        <barButtonItem width="28" style="plain" systemItem="fixedSpace" id="Hq6-ft-T7R"/>
                         <barButtonItem title="正负变号" id="zhz-Iz-p1O">
                             <connections>
                                 <action selector="BianHao:" destination="-1" id="Li4-U5-iEn"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem width="34" style="plain" systemItem="fixedSpace" id="b9T-Si-aW4"/>
+                        <barButtonItem width="28" style="plain" systemItem="fixedSpace" id="b9T-Si-aW4"/>
                         <barButtonItem title="／" id="v2L-ov-6AB">
                             <connections>
                                 <action selector="Divide:" destination="-1" id="bQW-Wy-q7e"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem width="27" style="plain" systemItem="fixedSpace" id="dfn-eT-2ul"/>
+                        <barButtonItem width="28" style="plain" systemItem="fixedSpace" id="QUG-5g-hEG"/>
                         <barButtonItem title="完成" id="RSI-2D-gEe">
                             <connections>
                                 <action selector="Finish:" destination="-1" id="ji4-Np-ssz"/>
@@ -48,7 +51,7 @@
                     </items>
                 </toolbar>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="462.5" y="103"/>
         </view>

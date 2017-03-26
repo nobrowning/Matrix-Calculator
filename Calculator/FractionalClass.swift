@@ -9,8 +9,8 @@
 import UIKit
 
 class FractionalClass: NSObject {
-    private var FenMu:Int
-    private var FenZi:Int
+    fileprivate var FenMu:Int
+    fileprivate var FenZi:Int
     init(Zi:Int,Mu:Int) {
         self.FenMu = Mu
         self.FenZi = Zi
@@ -24,7 +24,7 @@ class FractionalClass: NSObject {
             return "\(self.FenZi)/\(self.FenMu)"
         }
     }
-    static func StringToFractional(str:String)->FractionalClass{
+    static func StringToFractional(_ str:String)->FractionalClass{
         var index = -1
         var a:String = ""
         var b:String = ""
@@ -39,16 +39,16 @@ class FractionalClass: NSObject {
                 a.append(char)
             }
             
-            if((str as NSString).substringWithRange(NSMakeRange(index, 1)) == "/"){
-                b = (str as NSString).substringFromIndex(index+1)
+            if((str as NSString).substring(with: NSMakeRange(index, 1)) == "/"){
+                b = (str as NSString).substring(from: index+1)
                 return FractionalClass(Zi: Int(a)!, Mu: Int(b)!).YueFen()
             }else{
-                let zi = (str as NSString).substringFromIndex(index+1)
+                let zi = (str as NSString).substring(from: index+1)
                 var mu = 1
                 if(zi.isEmpty){
                     return FractionalClass(Zi: Int(str)!, Mu: 1)
                 }else{
-                    for(var i = 0;i<zi.characters.count;i += 1){
+                    for _ in 0 ..< zi.characters.count {
                         mu*=10
                     }
                     return FractionalClass(Zi: Int(zi)!+Int(a)!*Int(mu), Mu: Int(mu)).YueFen()
@@ -58,7 +58,7 @@ class FractionalClass: NSObject {
  
         }
     }
-    static func DoubleToFractional(number:Double)->FractionalClass{
+    static func DoubleToFractional(_ number:Double)->FractionalClass{
         let str = String(number)
         var index = 0
         var mu = 1.0
@@ -68,11 +68,11 @@ class FractionalClass: NSObject {
                 break
             }
         }
-        let zi = (str as NSString).substringFromIndex(index)
+        let zi = (str as NSString).substring(from: index)
         if(zi.isEmpty){
             return FractionalClass(Zi: Int(number), Mu: 1)
         }else{
-            for(var i = 0;i<zi.characters.count;i += 1){
+            for _ in 0 ..< zi.characters.count {
                 mu*=10
             }
             return FractionalClass(Zi: Int(zi)!+Int(number)*Int(mu), Mu: Int(mu)).YueFen()
@@ -108,7 +108,7 @@ class FractionalClass: NSObject {
     
 }
 
-func MaxGongYueShu( x:Int, y:Int)->Int{
+func MaxGongYueShu( _ x:Int, y:Int)->Int{
     var a = x
     var b = y
     var temp:Int
@@ -210,11 +210,11 @@ func / (a:FractionalClass,b:FractionalClass)->FractionalClass{
 }
 
 
-postfix func ++ (inout a:FractionalClass){
+postfix func ++ (a:inout FractionalClass){
     let b = FractionalClass(Zi: 1, Mu: 1)
     a = a+b
 }
-postfix func -- (inout a:FractionalClass){
+postfix func -- (a:inout FractionalClass){
     let b = FractionalClass(Zi: 1, Mu: 1)
     a = a-b
 }

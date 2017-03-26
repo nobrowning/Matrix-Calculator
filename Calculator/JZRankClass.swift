@@ -9,51 +9,50 @@
 import UIKit
 
 class JZRankClass: NSObject {
-    private var matrix = Array<Array<FractionalClass>>()
-    private let Hang:Int
-    private let Lie:Int
+    fileprivate var matrix = Array<Array<FractionalClass>>()
+    fileprivate let Hang:Int
+    fileprivate let Lie:Int
     
     init(newMatrix: Array<UITextField>,Hang:Int,Lie:Int) {
-        for(var i = 0;i<Hang;i += 1){
+        for i in 0 ..< Hang {
             matrix.append(Array<FractionalClass>())
-            for(var j = 0;j<Lie;j += 1){
+            for j in 0 ..< Lie {
                 matrix[i].append(FractionalClass.StringToFractional(newMatrix[i*Lie+j].text!))
             }
         }
         self.Hang = Hang
         self.Lie = Lie
     }
-    func exchang_row(inout a:Array<FractionalClass>,inout b:Array<FractionalClass>){//交换a行和b行
+    func exchang_row(_ a:inout Array<FractionalClass>,b:inout Array<FractionalClass>){//交换a行和b行
         var t:FractionalClass
-        for(var i=0;i < Lie;i += 1){
+        for i in 0 ..< Lie {
             t = a[i]
             a[i] = b[i]
             b[i] = t
         }
     }
     
-    func mul_row(inout a:Array<FractionalClass>,k:FractionalClass,n:Int){//将a行乘以k倍
-        for(var i=n;i < a.count;i += 1){
+    func mul_row(_ a:inout Array<FractionalClass>,k:FractionalClass,n:Int){//将a行乘以k倍
+        for i in n ..< a.count {
             a[i] = k*a[i]
         }
 
     }
     
-    func add_row(inout a1:Array<FractionalClass>,a2:Array<FractionalClass>,k:FractionalClass,n:Int){//从下标第ci个开始，将a2乘以k倍加到a1行
-        for(var i=n;i<a1.count;i += 1){
+    func add_row(_ a1:inout Array<FractionalClass>,a2:Array<FractionalClass>,k:FractionalClass,n:Int){//从下标第ci个开始，将a2乘以k倍加到a1行
+        for i in n ..< a1.count{
             a1[i] = a1[i]+a2[i]*k
         }
     }
 
     func rank_matrix()->Int{
-        var i:Int
         var t:FractionalClass
         var ri = 0  //行标记
-        var ci = 0 //列标记
+        //ci为列标记
         var f_z:Bool    //某行是否全为0的标志，为1表示全为false
-        for(;ci<Lie;ci += 1){
+        for ci in 0 ..< Lie{
             f_z=true
-            for(i=ri;i<Hang;i += 1){
+            for i in ri ..< Hang {
                 if(matrix[i][ci].getFenZi() != 0){
                     if(i != ri){
                         if(f_z){
@@ -75,12 +74,12 @@ class JZRankClass: NSObject {
         return ri
     }
     func simpleRankMatrix(){
-        for(var i = 0;i<Hang;i += 1){
-            for(var j = i;j<Lie;j += 1){
+        for i in 0 ..< Hang{
+            for j in i ..< Lie{
                 if(matrix[i][j].getFenZi() != 0){
                     
                     mul_row(&matrix[i], k: FractionalClass(Zi: 1, Mu: 1)/matrix[i][j], n: j)
-                    for(var k = 0;k<i;k += 1){
+                    for k in 0 ..< i {
                         add_row(&matrix[k], a2: matrix[i], k: -matrix[k][j], n: j)
                     }
                     break
@@ -93,8 +92,8 @@ class JZRankClass: NSObject {
     
     func showResult()->Array<String>{
         var someInts = Array<String>()
-        for(var i = 0;i < Hang;i += 1){
-            for(var j = 0;j < Lie;j += 1){
+        for i in 0 ..< Hang {
+            for j in 0 ..< Lie {
                 someInts.append(matrix[i][j].YueFen().toString())
             }
         }
