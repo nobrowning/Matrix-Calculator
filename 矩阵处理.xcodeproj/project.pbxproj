@@ -7,13 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C819D7291C916CDC007D46FC /* JZRankClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C819D7281C916CDC007D46FC /* JZRankClass.swift */; };
 		C81BBA2F1C7DB4D600FA3E79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81BBA2E1C7DB4D600FA3E79 /* AppDelegate.swift */; };
 		C81BBA311C7DB4D600FA3E79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81BBA301C7DB4D600FA3E79 /* ViewController.swift */; };
 		C81BBA341C7DB4D600FA3E79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C81BBA321C7DB4D600FA3E79 /* Main.storyboard */; };
-		C81BBA361C7DB4D600FA3E79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C81BBA351C7DB4D600FA3E79 /* Assets.xcassets */; };
-		C81BBA391C7DB4D600FA3E79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C81BBA371C7DB4D600FA3E79 /* LaunchScreen.storyboard */; };
 		C81BBA441C7DB4D600FA3E79 /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81BBA431C7DB4D600FA3E79 /* CalculatorTests.swift */; };
 		C81BBA4F1C7DB4D600FA3E79 /* CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81BBA4E1C7DB4D600FA3E79 /* CalculatorUITests.swift */; };
+		C882BCAB1C984B79004F418C /* FractionalClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C882BCAA1C984B79004F418C /* FractionalClass.swift */; };
+		C89E6C1C1C8F30F100451D95 /* DoubleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89E6C181C8F30F100451D95 /* DoubleViewController.swift */; };
+		C89E6C1D1C8F30F100451D95 /* DoubleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C89E6C191C8F30F100451D95 /* DoubleViewController.xib */; };
+		C89E6C1E1C8F30F100451D95 /* MyPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89E6C1A1C8F30F100451D95 /* MyPickerViewController.swift */; };
+		C89E6C1F1C8F30F100451D95 /* MyPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C89E6C1B1C8F30F100451D95 /* MyPickerViewController.xib */; };
+		C8B4E3321C9A3D0F00B4FB27 /* ToolBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B4E3301C9A3D0F00B4FB27 /* ToolBarViewController.swift */; };
+		C8B8B3C21CA18D8100629AE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8B8B3C11CA18D8100629AE8 /* Assets.xcassets */; };
+		C8D7CF101CA0370F0075F663 /* ToolBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8D7CF0F1CA0370F0075F663 /* ToolBarViewController.xib */; };
+		C8EAC8871C94052E00C9D1F4 /* HangLieShiClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EAC8861C94052E00C9D1F4 /* HangLieShiClass.swift */; };
+		C8EAC8891C9448B900C9D1F4 /* NIJZClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EAC8881C9448B900C9D1F4 /* NIJZClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,19 +43,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C81BBA2B1C7DB4D600FA3E79 /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C819D7281C916CDC007D46FC /* JZRankClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JZRankClass.swift; sourceTree = "<group>"; };
+		C81BBA2B1C7DB4D600FA3E79 /* 矩阵处理.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "矩阵处理.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C81BBA2E1C7DB4D600FA3E79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C81BBA301C7DB4D600FA3E79 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C81BBA331C7DB4D600FA3E79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C81BBA351C7DB4D600FA3E79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C81BBA381C7DB4D600FA3E79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C81BBA3A1C7DB4D600FA3E79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C81BBA3F1C7DB4D600FA3E79 /* CalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C81BBA3F1C7DB4D600FA3E79 /* 矩阵处理.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "矩阵处理.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C81BBA431C7DB4D600FA3E79 /* CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTests.swift; sourceTree = "<group>"; };
 		C81BBA451C7DB4D600FA3E79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C81BBA4A1C7DB4D600FA3E79 /* CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C81BBA4A1C7DB4D600FA3E79 /* 矩阵处理.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "矩阵处理.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C81BBA4E1C7DB4D600FA3E79 /* CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorUITests.swift; sourceTree = "<group>"; };
 		C81BBA501C7DB4D600FA3E79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C882BCAA1C984B79004F418C /* FractionalClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FractionalClass.swift; sourceTree = "<group>"; };
+		C89E6C181C8F30F100451D95 /* DoubleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleViewController.swift; sourceTree = "<group>"; };
+		C89E6C191C8F30F100451D95 /* DoubleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DoubleViewController.xib; sourceTree = "<group>"; };
+		C89E6C1A1C8F30F100451D95 /* MyPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPickerViewController.swift; sourceTree = "<group>"; };
+		C89E6C1B1C8F30F100451D95 /* MyPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyPickerViewController.xib; sourceTree = "<group>"; };
+		C8B4E3301C9A3D0F00B4FB27 /* ToolBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolBarViewController.swift; sourceTree = "<group>"; };
+		C8B4E3311C9A3D0F00B4FB27 /* ToolBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ToolBarViewController.xib; sourceTree = "<group>"; };
+		C8B8B3C11CA18D8100629AE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C8D7CF0F1CA0370F0075F663 /* ToolBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ToolBarViewController.xib; sourceTree = "<group>"; };
+		C8EAC8861C94052E00C9D1F4 /* HangLieShiClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HangLieShiClass.swift; path = ../HangLieShiClass.swift; sourceTree = "<group>"; };
+		C8EAC8881C9448B900C9D1F4 /* NIJZClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NIJZClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,9 +106,9 @@
 		C81BBA2C1C7DB4D600FA3E79 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C81BBA2B1C7DB4D600FA3E79 /* Calculator.app */,
-				C81BBA3F1C7DB4D600FA3E79 /* CalculatorTests.xctest */,
-				C81BBA4A1C7DB4D600FA3E79 /* CalculatorUITests.xctest */,
+				C81BBA2B1C7DB4D600FA3E79 /* 矩阵处理.app */,
+				C81BBA3F1C7DB4D600FA3E79 /* 矩阵处理.xctest */,
+				C81BBA4A1C7DB4D600FA3E79 /* 矩阵处理.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,12 +116,22 @@
 		C81BBA2D1C7DB4D600FA3E79 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				C89E6C181C8F30F100451D95 /* DoubleViewController.swift */,
+				C89E6C191C8F30F100451D95 /* DoubleViewController.xib */,
+				C89E6C1A1C8F30F100451D95 /* MyPickerViewController.swift */,
+				C89E6C1B1C8F30F100451D95 /* MyPickerViewController.xib */,
 				C81BBA2E1C7DB4D600FA3E79 /* AppDelegate.swift */,
 				C81BBA301C7DB4D600FA3E79 /* ViewController.swift */,
 				C81BBA321C7DB4D600FA3E79 /* Main.storyboard */,
-				C81BBA351C7DB4D600FA3E79 /* Assets.xcassets */,
-				C81BBA371C7DB4D600FA3E79 /* LaunchScreen.storyboard */,
+				C8B8B3C11CA18D8100629AE8 /* Assets.xcassets */,
+				C8B4E3301C9A3D0F00B4FB27 /* ToolBarViewController.swift */,
+				C8B4E3311C9A3D0F00B4FB27 /* ToolBarViewController.xib */,
+				C8D7CF0F1CA0370F0075F663 /* ToolBarViewController.xib */,
 				C81BBA3A1C7DB4D600FA3E79 /* Info.plist */,
+				C8EAC8861C94052E00C9D1F4 /* HangLieShiClass.swift */,
+				C819D7281C916CDC007D46FC /* JZRankClass.swift */,
+				C8EAC8881C9448B900C9D1F4 /* NIJZClass.swift */,
+				C882BCAA1C984B79004F418C /* FractionalClass.swift */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -128,9 +157,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C81BBA2A1C7DB4D600FA3E79 /* Calculator */ = {
+		C81BBA2A1C7DB4D600FA3E79 /* 矩阵处理 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C81BBA531C7DB4D600FA3E79 /* Build configuration list for PBXNativeTarget "Calculator" */;
+			buildConfigurationList = C81BBA531C7DB4D600FA3E79 /* Build configuration list for PBXNativeTarget "矩阵处理" */;
 			buildPhases = (
 				C81BBA271C7DB4D600FA3E79 /* Sources */,
 				C81BBA281C7DB4D600FA3E79 /* Frameworks */,
@@ -140,14 +169,14 @@
 			);
 			dependencies = (
 			);
-			name = Calculator;
+			name = "矩阵处理";
 			productName = Calculator;
-			productReference = C81BBA2B1C7DB4D600FA3E79 /* Calculator.app */;
+			productReference = C81BBA2B1C7DB4D600FA3E79 /* 矩阵处理.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C81BBA3E1C7DB4D600FA3E79 /* CalculatorTests */ = {
+		C81BBA3E1C7DB4D600FA3E79 /* 矩阵处理Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C81BBA561C7DB4D600FA3E79 /* Build configuration list for PBXNativeTarget "CalculatorTests" */;
+			buildConfigurationList = C81BBA561C7DB4D600FA3E79 /* Build configuration list for PBXNativeTarget "矩阵处理Tests" */;
 			buildPhases = (
 				C81BBA3B1C7DB4D600FA3E79 /* Sources */,
 				C81BBA3C1C7DB4D600FA3E79 /* Frameworks */,
@@ -158,14 +187,14 @@
 			dependencies = (
 				C81BBA411C7DB4D600FA3E79 /* PBXTargetDependency */,
 			);
-			name = CalculatorTests;
+			name = "矩阵处理Tests";
 			productName = CalculatorTests;
-			productReference = C81BBA3F1C7DB4D600FA3E79 /* CalculatorTests.xctest */;
+			productReference = C81BBA3F1C7DB4D600FA3E79 /* 矩阵处理.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		C81BBA491C7DB4D600FA3E79 /* CalculatorUITests */ = {
+		C81BBA491C7DB4D600FA3E79 /* 矩阵处理UITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C81BBA591C7DB4D600FA3E79 /* Build configuration list for PBXNativeTarget "CalculatorUITests" */;
+			buildConfigurationList = C81BBA591C7DB4D600FA3E79 /* Build configuration list for PBXNativeTarget "矩阵处理UITests" */;
 			buildPhases = (
 				C81BBA461C7DB4D600FA3E79 /* Sources */,
 				C81BBA471C7DB4D600FA3E79 /* Frameworks */,
@@ -176,9 +205,9 @@
 			dependencies = (
 				C81BBA4C1C7DB4D600FA3E79 /* PBXTargetDependency */,
 			);
-			name = CalculatorUITests;
+			name = "矩阵处理UITests";
 			productName = CalculatorUITests;
-			productReference = C81BBA4A1C7DB4D600FA3E79 /* CalculatorUITests.xctest */;
+			productReference = C81BBA4A1C7DB4D600FA3E79 /* 矩阵处理.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -188,26 +217,29 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "杜晨光";
 				TargetAttributes = {
 					C81BBA2A1C7DB4D600FA3E79 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = 7GK69TE73M;
+						DevelopmentTeam = G6M6R36SLS;
+						LastSwiftMigration = 0800;
 					};
 					C81BBA3E1C7DB4D600FA3E79 = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = 7GK69TE73M;
+						LastSwiftMigration = 0800;
 						TestTargetID = C81BBA2A1C7DB4D600FA3E79;
 					};
 					C81BBA491C7DB4D600FA3E79 = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = 7GK69TE73M;
+						LastSwiftMigration = 0800;
 						TestTargetID = C81BBA2A1C7DB4D600FA3E79;
 					};
 				};
 			};
-			buildConfigurationList = C81BBA261C7DB4D600FA3E79 /* Build configuration list for PBXProject "Calculator" */;
+			buildConfigurationList = C81BBA261C7DB4D600FA3E79 /* Build configuration list for PBXProject "矩阵处理" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -220,9 +252,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C81BBA2A1C7DB4D600FA3E79 /* Calculator */,
-				C81BBA3E1C7DB4D600FA3E79 /* CalculatorTests */,
-				C81BBA491C7DB4D600FA3E79 /* CalculatorUITests */,
+				C81BBA2A1C7DB4D600FA3E79 /* 矩阵处理 */,
+				C81BBA3E1C7DB4D600FA3E79 /* 矩阵处理Tests */,
+				C81BBA491C7DB4D600FA3E79 /* 矩阵处理UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -232,9 +264,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C81BBA391C7DB4D600FA3E79 /* LaunchScreen.storyboard in Resources */,
-				C81BBA361C7DB4D600FA3E79 /* Assets.xcassets in Resources */,
+				C8D7CF101CA0370F0075F663 /* ToolBarViewController.xib in Resources */,
+				C89E6C1F1C8F30F100451D95 /* MyPickerViewController.xib in Resources */,
 				C81BBA341C7DB4D600FA3E79 /* Main.storyboard in Resources */,
+				C89E6C1D1C8F30F100451D95 /* DoubleViewController.xib in Resources */,
+				C8B8B3C21CA18D8100629AE8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +293,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8B4E3321C9A3D0F00B4FB27 /* ToolBarViewController.swift in Sources */,
 				C81BBA311C7DB4D600FA3E79 /* ViewController.swift in Sources */,
 				C81BBA2F1C7DB4D600FA3E79 /* AppDelegate.swift in Sources */,
+				C882BCAB1C984B79004F418C /* FractionalClass.swift in Sources */,
+				C8EAC8891C9448B900C9D1F4 /* NIJZClass.swift in Sources */,
+				C89E6C1E1C8F30F100451D95 /* MyPickerViewController.swift in Sources */,
+				C8EAC8871C94052E00C9D1F4 /* HangLieShiClass.swift in Sources */,
+				C819D7291C916CDC007D46FC /* JZRankClass.swift in Sources */,
+				C89E6C1C1C8F30F100451D95 /* DoubleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,12 +326,12 @@
 /* Begin PBXTargetDependency section */
 		C81BBA411C7DB4D600FA3E79 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C81BBA2A1C7DB4D600FA3E79 /* Calculator */;
+			target = C81BBA2A1C7DB4D600FA3E79 /* 矩阵处理 */;
 			targetProxy = C81BBA401C7DB4D600FA3E79 /* PBXContainerItemProxy */;
 		};
 		C81BBA4C1C7DB4D600FA3E79 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C81BBA2A1C7DB4D600FA3E79 /* Calculator */;
+			target = C81BBA2A1C7DB4D600FA3E79 /* 矩阵处理 */;
 			targetProxy = C81BBA4B1C7DB4D600FA3E79 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -302,14 +343,6 @@
 				C81BBA331C7DB4D600FA3E79 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		C81BBA371C7DB4D600FA3E79 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C81BBA381C7DB4D600FA3E79 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -328,8 +361,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -351,7 +386,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -372,8 +407,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -389,9 +426,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -400,10 +438,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = OpenImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Calculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Turbo.Calculator;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MACH_O_TYPE = mh_execute;
+				PRODUCT_BUNDLE_IDENTIFIER = Turbo.CalculatorS;
+				PRODUCT_NAME = "矩阵处理";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -411,10 +454,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = OpenImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Calculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Turbo.Calculator;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MACH_O_TYPE = mh_execute;
+				PRODUCT_BUNDLE_IDENTIFIER = Turbo.CalculatorS;
+				PRODUCT_NAME = "矩阵处理";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -425,8 +473,9 @@
 				INFOPLIST_FILE = CalculatorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Turbo.CalculatorTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Calculator.app/Calculator";
+				PRODUCT_NAME = "矩阵处理";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/矩阵处理.app/矩阵处理";
 			};
 			name = Debug;
 		};
@@ -437,8 +486,9 @@
 				INFOPLIST_FILE = CalculatorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Turbo.CalculatorTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Calculator.app/Calculator";
+				PRODUCT_NAME = "矩阵处理";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/矩阵处理.app/矩阵处理";
 			};
 			name = Release;
 		};
@@ -448,7 +498,8 @@
 				INFOPLIST_FILE = CalculatorUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Turbo.CalculatorUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "矩阵处理";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Calculator;
 				USES_XCTRUNNER = YES;
 			};
@@ -460,7 +511,8 @@
 				INFOPLIST_FILE = CalculatorUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Turbo.CalculatorUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "矩阵处理";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Calculator;
 				USES_XCTRUNNER = YES;
 			};
@@ -469,7 +521,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C81BBA261C7DB4D600FA3E79 /* Build configuration list for PBXProject "Calculator" */ = {
+		C81BBA261C7DB4D600FA3E79 /* Build configuration list for PBXProject "矩阵处理" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C81BBA511C7DB4D600FA3E79 /* Debug */,
@@ -478,29 +530,32 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C81BBA531C7DB4D600FA3E79 /* Build configuration list for PBXNativeTarget "Calculator" */ = {
+		C81BBA531C7DB4D600FA3E79 /* Build configuration list for PBXNativeTarget "矩阵处理" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C81BBA541C7DB4D600FA3E79 /* Debug */,
 				C81BBA551C7DB4D600FA3E79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		C81BBA561C7DB4D600FA3E79 /* Build configuration list for PBXNativeTarget "CalculatorTests" */ = {
+		C81BBA561C7DB4D600FA3E79 /* Build configuration list for PBXNativeTarget "矩阵处理Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C81BBA571C7DB4D600FA3E79 /* Debug */,
 				C81BBA581C7DB4D600FA3E79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		C81BBA591C7DB4D600FA3E79 /* Build configuration list for PBXNativeTarget "CalculatorUITests" */ = {
+		C81BBA591C7DB4D600FA3E79 /* Build configuration list for PBXNativeTarget "矩阵处理UITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C81BBA5A1C7DB4D600FA3E79 /* Debug */,
 				C81BBA5B1C7DB4D600FA3E79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
